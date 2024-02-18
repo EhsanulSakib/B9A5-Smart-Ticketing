@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EZ Ticket</title>
+  </head>
+  <body class="max-w-[1420px] m-auto font-inter">
+    <header class="w-11/12 m-auto">
+      <!-- navbar -->
+      <div
+        class="navbar p-0 w-full 2xl:w-4/5 m-auto bg-base-100 flex justify-between mt-1 lg:mt-6"
+      >
+        <div class="navbar-start lg:hidden w-auto">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div
+            class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[--primary-text] font-raleway"
+          >
+            EZ-Ticket
+          </div>
+        </div>
+        <div class="navbar-start-2 hidden lg:block">
+          <a
+            class="btn btn-ghost text-2xl md:text-3xl lg:text-4xl font-extrabold text-[--primary-text] font-raleway"
+            >EZ-Ticket</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex justify-between">
+          <ul class="flex gap-11">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end w-auto">
+          <button
+            class="rounded-lg py-2 px-4 md:py-4 md:px-6 bg-[#1DD10066] flex flex-row gap-2 items-center"
+          >
+            <h2 class="text-lg md:text-xl font-bold text-[--white]">Bus</h2>
+            <img src="images/bus-icon.png" alt="bus-icon" />
+          </button>
+        </div>
+      </div>
+      <!-- banner -->
+      <section
+        class="banner mt-8 h-auto py-12 lg:py-32 rounded-lg lg:rounded-[32px] cover-bg bg-cover bg-no-repeat text-white flex flex-col justify-center items-center font-inter"
+      >
+        <h2
+          class="mb-1 lg:mb-4 font-extrabold text-white text-2xl lg:text-[64px] font-raleway"
+        >
+          End-to-End Travel with
+        </h2>
+        <h2
+          class="my-1 lg:my-4 font-extrabold text-[rgb(29,209,0)] text-2xl lg:text-[64px] font-raleway"
+        >
+          P Paribahan
+        </h2>
+        <p class="mb-1 lg:mb-4 text-center w-full md:w-1/2 text-xs lg:text-lg">
+          Welcome to EZ Ticket: Your Gateway to Seamless Event Registration!
+          With EZ Ticket, securing your spot at any event is effortless. Say
+          goodbye to long queues and last-minute stress. Join us today for
+          convenient access to a world of unforgettable experiences!
+        </p>
+        <button
+          class="mb-1 lg:mb-4 btn btn-accent bg-[rgb(29,209,0)] font-bold font-raleway text-sm lg:text-xl hover:bg-[rgb(84,223,63)] border-none px-3 h-3"
+        >
+          Buy Ticket
+        </button>
+
+        <!-- web-info -->
+      </section>
+      <div
+        class="web-info flex w-full md:w-2/3 m-auto flex-col md:flex-row gap-4 md:gap-4 mt-4 md:-mt-10 lg:-mt-16"
+      >
+        <div
+          class="banner-card w-full p-2 lg:p-4 rounded-md lg:rounded-2xl flex justify-center items-center gap-3 bg-white text-[--primary-text] info-box-shadow"
+        >
+          <img
+            class="w-8 h-8 lg:w-16 lg:h-16"
+            src="images/people.png"
+            alt="ticket-cupon-icon"
+          />
+          <div>
+            <h2 class="lg:mb-2 font-bold text-xl xl:text-4xl">500K+</h2>
+            <h3 class="text-xs xl:text-xl">Registered users</h3>
+          </div>
+        </div>
+        <div
+          class="banner-card w-full p-2 lg:p-4 rounded-md lg:rounded-2xl flex justify-center items-center gap-3 bg-white text-[--primary-text] info-box-shadow"
+        >
+          <img
+            class="w-8 h-8 lg:w-16 lg:h-16"
+            src="images/ticket-cupon.png"
+            alt="ticket-cupon-icon"
+          />
+          <div>
+            <h2 class="lg:mb-2 font-bold text-xl xl:text-4xl">1.7 lacks</h2>
+            <h3 class="text-xs xl:text-xl">Ticket sold</h3>
+          </div>
+        </div>
+        <div
+          class="banner-card w-full p-2 lg:p-4 rounded-md lg:rounded-2xl flex justify-center items-center gap-3 bg-white text-[--primary-text] info-box-shadow"
+        >
+          <img
+            class="w-8 h-8 lg:w-16 lg:h-16"
+            src="images/stoppage.png"
+            alt="ticket-cupon-icon"
+          />
+          <div>
+            <h2 class="lg:mb-2 font-bold text-xl xl:text-4xl">80K+</h2>
+            <h3 class="text-xs xl:text-xl">Rental partners</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- script -->
+  </body>
+</html>
