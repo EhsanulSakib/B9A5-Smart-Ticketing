@@ -361,12 +361,14 @@
           </section>
         </section>
 
+        <!-- seat-selection-section -->
         <section
-          id="seat"
+          id="seat-confirm"
           class="w-11/12 mt-4 lg:mt-8 m-auto flex flex-col lg:flex-row justify-between bg-white rounded-lg"
         >
+          <!-- seat-selection -->
           <div
-            class="seats w-full p-2 lg:p-4 border-r-2 border-r-[rgba(3,7,18,0.3)] border-dashed"
+            class="seats w-full p-2 lg:p-4 border-b-2 lg:border-r-2 border-[rgba(3,7,18,0.3)] border-dashed"
           >
             <h2
               class="mb-2 lg:mb-4 font-raleway font-semibold text-base lg:text-2xl"
@@ -392,6 +394,7 @@
               </div>
             </div>
           </div>
+          <!-- payment-form -->
           <div class="payment w-full p-2 lg:p-4">
             <h2
               class="pb-2 lg:pb-4 mb-2 lg:mb-4 font-raleway font-semibold text-base lg:text-2xl border-b border-dashed border-b-[rgba(3,7,18,0.2)]"
@@ -400,7 +403,7 @@
             </h2>
 
             <!-- recipt -->
-            <div class="font-inter bg-[#F7F8F8] rounded-md p-3">
+            <div class="font-inter my-4 bg-[#F7F8F8] rounded-md p-3">
               <div
                 class="title flex flex-row justify-between border-b border-dashed border-[#03071233]"
               >
@@ -466,6 +469,62 @@
                   </h2>
                 </div>
               </div>
+            </div>
+
+            <!-- information -->
+            <!-- name -->
+            <div class="name">
+              <h2 class="font-semibold text-[--primary-text]">
+                Passenger Name*
+              </h2>
+              <input
+                class="mt-2 w-full p-4 border rounded-md border-[#0307121A]"
+                type="text"
+                name="passenger-name"
+                id="p-name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <!-- number -->
+            <div class="number mt-4">
+              <h2 class="font-semibold text-[--primary-text]">Phone Number*</h2>
+              <input
+                class="mt-2 w-full p-4 border rounded-md border-[#0307121A]"
+                type="number"
+                name="passenger-name"
+                id="p-phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <!-- email -->
+            <div class="email mt-4">
+              <h2 class="font-semibold text-[--primary-text]">Email ID</h2>
+              <input
+                class="mt-2 w-full p-4 border rounded-md border-[#0307121A]"
+                type="email"
+                name="passenger-email"
+                id="p-email"
+                placeholder="Enter your email id"
+              />
+            </div>
+
+            <!-- confirm-btn -->
+            <button
+              id="confirm"
+              class="mt-4 w-full p-6 text-center bg-slate-400 font-raleway font-extrabold text-white text-xl rounded-lg"
+              disabled
+            >
+              Next
+            </button>
+
+            <!-- terms -->
+            <div class="mt-2 flex flex-row justify-center gap-6">
+              <h3 class="underline cursor-pointer">Terms and Conditions</h3>
+              <h3 class="underline cursor-pointer">Cancellation Policy</h3>
             </div>
           </div>
         </section>
